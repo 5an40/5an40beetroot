@@ -1,0 +1,149 @@
+@import "variables";
+@import "fonts";
+@import "icons";
+@import "mixins";
+@import "pages/index";
+
+
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: $white;
+
+}
+h1 {
+    margin: 0;
+}
+h2, h3, p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+a {
+    color: $white;
+    text-decoration: none;
+}
+.container {
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.header__header-section {
+    background-color: $blue-header;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+
+    &__row {
+    width: 100%;      
+    }
+
+    &__logo {
+        font-size: 24px;
+        padding-top: 32px;
+    }
+
+    &__list-item {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+  
+.testimonial {
+
+    &__title {
+    font-size: 36px;
+    font-weight: 400;
+    padding: 100px;    
+    }
+
+    &.container {
+        height: 284px;
+        background-color: $grey-for-icon;
+        
+    }
+
+    &__img {
+        width: 445px;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &__text:first-child {
+        font-size: 36px;
+        
+    }
+}
+
+.icon-section {
+    background-color: $grey-for-icon;
+    height: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-house {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    text-align: center;
+    padding: 100px 0 0;
+    min-height: 700px;
+    @include respond-to('tablet') {
+        padding: 90px 0 0px;
+    }
+    @include respond-to('mobile') {
+        padding: 40px 0 0px;       
+    }
+}
+
+.section-mountains {
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    text-align: center;
+    padding: 100px 0 0;
+    min-height: 700px;
+    @include respond-to('tablet') {
+        padding: 90px 0 0px;
+    }
+    @include respond-to('mobile') {
+        padding: 40px 0 0px;       
+    }
+}
+
+
+
+

@@ -1,0 +1,61 @@
+
+.why-choose-us {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $white;
+  text-align: center;
+  padding: 100px 0 0;
+  height: 100vh;
+  text-align: left;
+  @include respond-to('tablet') {
+      padding: 90px 0 0px;
+  }
+  @include respond-to('mobile') {
+      padding: 40px 0 0px;       
+  }
+
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between
+  }
+  
+  &__colum {
+      flex-direction: column;
+      width: 50%;
+      padding: 0;
+      align-items: center;
+  }
+
+  &__title {
+      text-transform: uppercase;
+      font-size: 36px;
+      font-family: $aleo;
+      font-weight: 400;
+      padding-top: 205px;
+      margin-bottom: 75px;
+  }
+
+  &__text-holder {
+      padding-top: 74px;
+      margin-bottom: 50px;
+  }
+
+  &__btn {
+      max-width: 225px;
+      height: 60px;
+      border: none;
+      font-family: $aleo;
+  }
+
+  &__img-top {
+      padding: 120px 120px 4px 80px;
+  }
+
+  &__img-bottom {
+      padding: 0px 0px 120px 205px;
+  }
+
+}
